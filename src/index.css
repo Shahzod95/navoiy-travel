@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fontFamily,
+.what-do-ul,
+.navoi-map-text,
+.day-para,
+.up-class,
+.our-clients {
+  font-family: "Italiana", serif;
+}
