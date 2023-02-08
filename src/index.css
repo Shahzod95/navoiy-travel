@@ -7,6 +7,24 @@
 .navoi-map-text,
 .day-para,
 .up-class,
-.our-clients {
+.our-clients,
+.header,
+.header-2 {
   font-family: "Italiana", serif;
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./Images/bgSlider.png);
+  background-size: 160%;
+  background-position: center;
+  background-attachment: fixed;
+}
+.header-2 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./Images/bgSlider2.png);
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
 }
