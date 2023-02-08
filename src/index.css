@@ -1,12 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Caramel&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .fontFamily,
-.what-do-ul,
+.destination,
 .navoi-map-text,
 .day-para,
 .up-class,
 .our-clients {
   font-family: "Italiana", serif;
+}
+.destination {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #9e9e9e;
+}
+
+.sub-menu:hover.sub-image {
+  animation-name: op;
+  animation-duration: 2s;
+  animation-direction: reverse;
+}
+@keyframes op {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
