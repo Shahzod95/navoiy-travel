@@ -1,12 +1,12 @@
 import Header from "../../components/Header";
 import UsefulBlogPage from "../UsufulBlogPage";
-import NaturePage from './../NaturePage/NaturePage';
+import Nature from './../../components/Nature/Nature';
 const MainPage = () => {
   return (
     <div>
       <Header />
       <UsefulBlogPage />
-      <NaturePage/>
+      <Nature/>
     </div>
   );
 };
