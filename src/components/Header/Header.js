@@ -1,12 +1,28 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 import Logo from "../../assets/Images/logo.png";
 import routes from "../../routes";
 
-const Header = ({ downIcon, logged }) => {
+const Header = () => {
   const [showSubMenu, setShowSubMenu] = useState(false);
   const [image, setImage] = useState(0);
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    console.log(window.scrollY);
+    if (window.scrollY >= 100) {
+      setNavbar(true);
+      console.log(navbar);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  useEffect(() => {
+    changeBackground();
+    window.addEventListener("scroll", changeBackground);
+  });
 
   const variants = {
     open: { opacity: 1, x: 0 },
@@ -14,24 +30,20 @@ const Header = ({ downIcon, logged }) => {
   };
 
   const subMenuOnMouseEnterHandler = () => {
-    console.log("running mouse enter");
-
     setShowSubMenu(true);
   };
   const subMenuOnMouseLeaveHandler = () => {
-    console.log("running mouse leave");
     setShowSubMenu(false);
   };
 
   const mouseEnterHandler = (id) => {
     setImage(id);
   };
-  console.log(image);
 
   return (
     <div
       className={`flex justify-around items-center py-6 z-20 fixed w-full ${
-        showSubMenu ? "bg-[#fff]" : "bg-transparent"
+        showSubMenu || navbar ? "bg-[#fff]" : "bg-transparent"
       }`}
     >
       <div>

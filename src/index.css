@@ -31,3 +31,7 @@
     opacity: 1;
   }
 }
+
+.place:hover .circle {
+  opacity: 1;
+}
