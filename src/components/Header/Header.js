@@ -10,10 +10,8 @@ const Header = () => {
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
-    console.log(window.scrollY);
     if (window.scrollY >= 100) {
       setNavbar(true);
-      console.log(navbar);
     } else {
       setNavbar(false);
     }
@@ -42,7 +40,7 @@ const Header = () => {
 
   return (
     <div
-      className={`flex justify-around items-center py-6 z-20 fixed w-full ${
+      className={`flex justify-around items-center py-4 z-20 fixed w-full transition-all ease-in-out duration-500 ${
         showSubMenu || navbar ? "bg-[#fff]" : "bg-transparent"
       }`}
     >
@@ -85,13 +83,13 @@ const Header = () => {
                   <motion.div
                     onMouseEnter={() => subMenuOnMouseEnterHandler()}
                     onMouseLeave={() => subMenuOnMouseLeaveHandler()}
-                    className={`w-full h-[90vh] absolute mt-24 top-[0] left-[0] bg-[#fff]`}
+                    className={`w-full h-[90vh] absolute mt-20 top-[0] left-[0] bg-[#fff] transition-all ease-in-out duration-700`}
                   >
                     <div className="container mx-auto w-full">
                       <div className="flex flex-row justify-around items-center py-6">
                         <img
                           src={item.children[image].img_url}
-                          className={`inline-block w-56 rotate-6 sub-image`}
+                          className={`inline-block w-56 rotate-6 sub-image transition-all ease-in-out duration-500`}
                           alt={item.children[image].title}
                         />
                         <ul className="inline-block destination">

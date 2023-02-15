@@ -10,9 +10,8 @@ const NatureSlider = () => {
     <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
       {data.naturedata.map((item) => {
         return (
-          <SwiperSlide>
+          <SwiperSlide key={item.id}>
             <div
-              key={item.id}
               className={`w-[100vw] h-[100vh] ${
                 item.green
                   ? "bg-[#279768]"

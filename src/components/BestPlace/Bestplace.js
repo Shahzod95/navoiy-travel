@@ -12,8 +12,6 @@ const BestPlaces = () => {
   const mouseEnterHandler = (id) => {
     setPlaceBg(id);
   };
-
-  console.log(data);
   return (
     <div className={`w-full p-[50px_0] text-center`}>
       <img

@@ -14,7 +14,6 @@ const routes = [
   {
     id: 2,
     title: "Destinations",
-    // icon: downIcon ? false : true,
     logged: false,
     isActive: false,
     icon: true,
@@ -26,36 +25,31 @@ const routes = [
       },
       {
         id: 12,
-        title: "Coasts and breaches0",
+        title: "Water",
         img_url: img1,
       },
       {
         id: 13,
-        title: "City tourism",
+        title: "Gastronomy",
         img_url: img2,
       },
       {
         id: 14,
-        title: "Nature",
+        title: "Sport and adventure",
         img_url: img3,
       },
       {
         id: 15,
-        title: "National food",
+        title: "Safari",
         img_url: img1,
       },
       {
         id: 16,
-        title: "Sport and anventure",
+        title: "Nature",
         img_url: img2,
       },
       {
         id: 17,
-        title: "Shopping",
-        img_url: img3,
-      },
-      {
-        id: 18,
         title: "Routes",
         img_url: img1,
       },

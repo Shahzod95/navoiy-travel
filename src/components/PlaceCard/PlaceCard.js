@@ -1,7 +1,6 @@
 import { GrFormNextLink } from "react-icons/gr";
 
 const PlaceCard = ({ item }) => {
-  console.log(item);
   const { img_url, description } = item;
   return (
     <div className="transition ease-in-out duration-500 cursor-pointer transition-[.5s] hover:translate-y-[30px] place">

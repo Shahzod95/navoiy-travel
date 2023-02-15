@@ -4,13 +4,13 @@ import { GrFormNext } from "react-icons/gr";
 const UsufulCard = ({ image1, logged }) => {
   return (
     <div
-      className={`w-[18rem] ease-in-out duration-700 h-[32rem] transition-[.5s] mb-[3rem] ${
+      className={`w-[18rem] ease-in-out duration-700 h-[23rem] mt-4 transition-[.5s] mb-3 ${
         logged ? "hover:translate-y-[1.8rem]" : ""
       }`}
     >
       <img
         src={image1}
-        className="transition-[.5s] hover:filter hover:opacity-[.4] h-[20rem] w-[17rem] rounded"
+        className="transition-[.5s] hover:filter hover:opacity-[.4] h-[18rem] w-[17rem] rounded"
       />
       <p className={`font-normal text-[1rem] leading-[1.5rem]`}>
         Lorem Ipsum is simply dummy text of the printing and typesetting
