@@ -7,6 +7,8 @@ import MainVideo from "../../components/MainVideo";
 import NatureSlider from "../../components/NatureSlider";
 import NavoiMap from "../../components/NavoiMap";
 import Newsletter from "../../components/Newsletter";
+import Packages from "../../components/Packages/Packages";
+import UpComing from "../../components/Upcoming/UpComing";
 import UsefulBlogPage from "../UsufulBlogPage";
 const MainPage = () => {
   return (
@@ -17,6 +19,8 @@ const MainPage = () => {
       <NatureSlider />
       <BestPlace />
       <NavoiMap />
+      <UpComing />
+      <Packages />
       <UsefulBlogPage />
       <Newsletter />
       <BookExprerens />
