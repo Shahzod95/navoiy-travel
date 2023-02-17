@@ -11,10 +11,10 @@
 .our-clients,
 .experents,
 .subscribe,
+.packages,
 .interactive-map {
   font-family: "Italiana", serif;
 }
-
 .leaflet-container {
   position: relative;
   width: 100%;
