@@ -1,2 +1,2 @@
 import Packages from "./Packages";
-export default Packages
+export default Packages;

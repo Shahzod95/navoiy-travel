@@ -1,10 +1,16 @@
+// import EventPage from "./EventPage";
+
+// import MapPage from "./MapPage";
+
 import MainPage from "./MainPage";
 
 function App() {
   return (
-    <div className={`overflow-hidden`}>
+    <>
+      {/* <EventPage /> */}
+      {/* <MapPage /> */}
       <MainPage />
-    </div>
+    </>
   );
 }
 

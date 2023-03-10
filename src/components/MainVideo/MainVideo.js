@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import bgImg from "../../assets/Images/book_experents.jpg";
 import bgVideo from "../../assets/Video/navoi_travel.mp4";
 import { FiPlayCircle } from "react-icons/fi";
@@ -11,6 +11,16 @@ const MainVideo = () => {
     setIconDisplay(false);
     videoRef.current.play();
   };
+  const videoPlay = () => {
+    if (window.scrollY >= 600) {
+      setIconDisplay(false);
+      videoRef.current.play();
+    }
+  };
+  useEffect(() => {
+    videoPlay();
+    window.addEventListener("scroll", videoPlay);
+  });
 
   const handlePause = () => {
     setIconDisplay(true);

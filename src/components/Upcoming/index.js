@@ -1,2 +1,2 @@
 import UpComing from "./UpComing";
-export default UpComing
+export default UpComing;

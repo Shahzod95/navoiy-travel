@@ -1,31 +1,30 @@
-import BestPlace from "../../components/BestPlace";
+import BestPlace from "../../components/BestPlaceCard";
 import BookExprerens from "../../components/BookExperens";
 import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header";
 import MainSlider from "../../components/MainSlider/MainSlider";
 import MainVideo from "../../components/MainVideo";
-import NatureSlider from "../../components/NatureSlider";
+import Navbar from "../../components/Navbar";
 import NavoiMap from "../../components/NavoiMap";
 import Newsletter from "../../components/Newsletter";
-import Packages from "../../components/Packages/Packages";
-import UpComing from "../../components/Upcoming/UpComing";
+import PlayQuiz from "../../components/PlayQuiz";
+import UpComing from "../../components/UpComing";
 import UsefulBlogPage from "../UsufulBlogPage";
+
 const MainPage = () => {
   return (
-    <div>
-      <Header />
+    <>
+      <Navbar />
       <MainSlider />
       <MainVideo />
-      <NatureSlider />
       <BestPlace />
       <NavoiMap />
-      <UpComing />
-      <Packages />
       <UsefulBlogPage />
-      <Newsletter />
+      <PlayQuiz />
       <BookExprerens />
+      <UpComing />
+      <Newsletter />
       <Footer />
-    </div>
+    </>
   );
 };
 
