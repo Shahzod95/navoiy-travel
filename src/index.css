@@ -181,7 +181,7 @@ html {
 
   /*  best places */
   .best-places-title {
-    @apply mt-[3.875rem] text-[3.125rem] text-color-main-blue;
+    @apply mt-[3.875rem] text-[3.125rem];
   }
 
   /* Suggesstions trip  */
