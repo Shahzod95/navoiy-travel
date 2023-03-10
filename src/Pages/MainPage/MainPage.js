@@ -7,7 +7,7 @@ import Navbar from "../../components/Navbar";
 import NavoiMap from "../../components/NavoiMap";
 import Newsletter from "../../components/Newsletter";
 import PlayQuiz from "../../components/PlayQuiz";
-import UpComing from "../../components/UpComing";
+// import UpComing from "../../components/UpComing";
 import UsefulBlogPage from "../UsufulBlogPage";
 
 const MainPage = () => {
@@ -21,7 +21,7 @@ const MainPage = () => {
       <UsefulBlogPage />
       <PlayQuiz />
       <BookExprerens />
-      <UpComing />
+      {/* <UpComing /> */}
       <Newsletter />
       <Footer />
     </>
