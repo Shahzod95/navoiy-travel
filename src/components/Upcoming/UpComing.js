@@ -1,7 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination } from "swiper";
-import { GrFormNext, GrNext } from "react-icons/gr";
-// import data from "../../db";
 
 const UpComing = () => {
   return (
